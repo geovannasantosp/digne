@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>doação - DigneVirtue</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon (1).ico" rel="apple-touch-icon">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  
+</head>
+
+<body class="blog-page">
+
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+    
+        <img src="assets/img/logo (2).png" alt="DigneVirtue">
+        
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="about.html">Sobre Nós</a></li>
+          <li><a href="services.html">Serviços</a></li>
+          <li><a href="testimonials.html" class="active">Doação</a></li>
+
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+    <i id="toggle-theme" class="bi bi-moon-stars" style="font-size: 20px; cursor: pointer; padding: 40px;"></i>
+
+  </header>
+ 
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/doação\ imagem.webp);">
+      
+    </div><!-- End Page Title -->
+       
+    <div class="container section-title" data-aos="fade-up">
+      <div class="educacao">
+        <img src="assets/img/doação.png" alt="Imagem de exemplo">
+        <div class="texto">
+          <h1 class="tema"> Criação de Sites e Aplicações para Causas Sociais</h1>
+          <p>Na Dignevirtue, estamos comprometidos com o desenvolvimento de soluções digitais que promovam inclusão, sustentabilidade e acesso à educação. Sua doação nos ajuda a ampliar projetos que fazem a diferença na vida de muitas pessoas, proporcionando tecnologia acessível e conhecimento para comunidades que mais precisam. Juntos, podemos criar um futuro mais justo e conectado.</div><!-- End Section Title -->
+    </div>
+    <div class="doacao-container">
+      <h2>Contribua com a Dignevirtue</h2>
+      <p>Faça parte da nossa missão para um futuro mais inclusivo e sustentável. Toda doação conta!</p>
+      <button class="doar-btn" onclick="openModal()">Doar Agora</button>
+  
+      <div id="doacao-modal" class="modal">
+          <div class="modal-content">
+              <span class="close-btn" onclick="closeModal()">&times;</span>
+              <h3>Escolha o valor da sua doação</h3>
+              <div class="valores-doacao">
+                  <button onclick="selecionarValor(10)">R$10</button>
+                  <button onclick="selecionarValor(50)">R$50</button>
+                  <button onclick="selecionarValor(100)">R$100</button>
+                  <button onclick="selecionarValor(500)">R$500</button>
+              </div>
+              <input type="number" id="valor-doacao" placeholder="Outro valor" />
+              <button class="confirmar-btn" onclick="confirmarDoacao()">Confirmar Doação</button>
+          </div>
+      </div>
+  </div>
+
+ <div class="assinatura-container">
+    <h2>Seja um Assinante DigneVirtue</h2>
+    <p>Contribua regularmente e apoie nossas ações de impacto social. Escolha seu plano abaixo!</p>
+    <button class="assinar-btn" onclick="openAssinaturaModal()">Assinar Agora</button>
+
+    <div id="assinatura-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeAssinaturaModal()">&times;</span>
+            <h3>Escolha seu plano de assinatura</h3>
+            <div class="planos-assinatura">
+                <button onclick="selecionarPlano('mensal', 15)">Mensal - R$15</button>
+                <button onclick="selecionarPlano('anual', 100)">Anual - R$100</button>
+            </div>
+            <div class="plano-selecionado">
+                <p id="plano-descricao">Nenhum plano selecionado.</p>
+            </div>
+            <button class="confirmar-btn" onclick="confirmarAssinatura()">Confirmar Assinatura</button>
+        </div>
+    </div>
+</div>
+  
+  </main>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  
+<footer id="footer" class="footer dark-background">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo1 d-flex align-items-center">
+            <span class="sitename">DigneVirtue</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>R. Papa Gregório Magno, 597</p>
+            <p>Vila Missionária, SP 04430-130</p>
+            <p><strong>Email:</strong> <span>dignevirtueempresa@gmail.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nossas páginas</h4>
+          <ul>
+            <li><a href="http://127.0.0.1:3000/index.html">Inicío</a></li>
+            <li><a href="http://127.0.0.1:3000/about.html">Sobre Nós</a></li>
+            <li><a href="http://127.0.0.1:3000/services.html">Serviços</a></li>
+            <li><a href="http://127.0.0.1:3000/testimonials.html">Doação</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nossos serviços</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#"> Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nossas soluções</h4>
+          <ul>
+            <li><a href="#">Plano de assinaturas</a></li>
+            <li><a href="#">Mentorias personalizadas</a></li>
+            <li><a href="#">Direcionamento de doações</a></li>
+            <li><a href="#">Atendimentos especializados</a></li>
+          </ul>
+        </div>
+
+        
+
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright text-center">
+    <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+      <div class="d-flex flex-column align-items-center align-items-lg-start">
+        <div>
+          © Copyright <strong><span>MyWebsite</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Desenvolvido por <a href="https://github.com/DigneVirtue">Afesu</a>
+        </div>
+      </div>
+
+      <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+        <a href="https://github.com/DigneVirtue"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/dignevirtue/?utm_source=ig_web_button_share_sheet"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/dignevirtue-ofc-479088332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+ 
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
