@@ -1,0 +1,159 @@
+/* Estilos da seção de doação */
+.doacao-container {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #8ca18c;
+    color: #d6d6d6;
+    font-family: 'Arial', sans-serif;
+    margin-top: 5rem;
+    margin-bottom: auto;
+}
+
+.doacao-container h2 {
+    font-size: 24px;
+    color: #e8e8e8;
+}
+
+.doacao-container h1 {
+    margin-top: 5rem;
+    color: #e8e8e8;
+}
+
+.doacao-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #b2b2b2;
+}
+
+.doar-btn {
+    background-color: #132013;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.doar-btn:hover {
+    background-color: #2d3b2e;
+}
+
+/* Estilos do modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 46, 30, 0.9);
+}
+
+.modal-content {
+    background-color: #051b05;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    color: #d6d6d6;
+    text-align: center;
+}
+
+.close-btn {
+    color: #aaaaaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #ffffff;
+}
+
+.valores-doacao button {
+    background-color: #81a784;
+    color: #ffffff;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.valores-doacao button:hover {
+    background-color: #45a049;
+}
+
+#valor-doacao {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.confirmar-btn {
+    background-color: #72976d;
+    color: #ffffff;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.confirmar-btn:hover {
+    background-color: #00695c;
+}
+
+/* Estilização básica */
+.assinatura-container {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #8ca18c;
+    color: #d6d6d6;
+    font-family: 'Arial', sans-serif;
+    margin-top: 5rem;
+    margin-bottom: auto;
+
+}
+
+.assinar-btn {
+    background-color: #132013;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+
+.assinar-btn:hover {
+    background-color: #2d3b2e;
+    ;
+}
+.planos-assinatura button {
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #81a784;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.planos-assinatura button:hover {
+    background-color:#45a049;
+}
+
